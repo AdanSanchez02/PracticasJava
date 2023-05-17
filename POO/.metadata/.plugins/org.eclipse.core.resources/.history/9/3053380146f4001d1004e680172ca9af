@@ -1,0 +1,13 @@
+
+public interface MetodosFunciones {
+	public void guardar(Votantes votos);
+
+	public void editar(int i, Votantes votos);
+
+	public void eliminar(int i);
+
+	public Votantes buscar(int i);
+
+	public void mostrar();
+
+}

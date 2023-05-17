@@ -1,0 +1,34 @@
+
+public class Implementacion implements Metodos {
+
+	@Override
+	public void guardar(Boletos boleto) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void editar(int i, Boletos boleto) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void eliminar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public Boletos buscar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+}

@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import ejercicios.scaner.autos.Autos;
+
+public class Implementacion implements Metodos, Metodos2 {
+	
+	//Declarar la lista
+	List<Celulares> listCel = new ArrayList<Celulares>();
+	
+	@Override
+	public void guardar(Celulares celulcar) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void editar(int i, Celulares celular) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void eliminar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public Celulares buscar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void contar() {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+}

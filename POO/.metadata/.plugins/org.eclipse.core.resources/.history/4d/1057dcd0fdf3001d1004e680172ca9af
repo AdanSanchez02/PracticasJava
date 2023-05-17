@@ -1,0 +1,30 @@
+package ejercicios.scaner.autos;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ventaAutos {
+	
+	//Declaramos variables
+	public String marca;
+	public String modelo;
+	public String version;
+	public int anio;
+	public String caja;
+	public long precio;
+	public float motor;
+	
+	//Espacio de memoria
+	public Autos car = null;
+	// Funcion scanner
+	public Scanner lectura = null;
+	// Lista
+	List<Autos> listCar = new ArrayList<Autos>();
+	
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+}

@@ -1,0 +1,59 @@
+
+public class Boletos {
+	// Atributos
+	int lugarAsiento;
+	String destino;
+	float precio;
+	String horario;
+
+	public Boletos() {
+
+	}
+
+	public Boletos(int lugarAsiento, String destino, float precio, String horario) {
+
+		this.lugarAsiento = lugarAsiento;
+		this.destino = destino;
+		this.precio = precio;
+		this.horario = horario;
+	}
+
+	@Override
+	public String toString() {
+		return "Boletos [lugarAsiento=" + lugarAsiento + ", destino=" + destino + ", precio=" + precio + ", horario="
+				+ horario + "]\n";
+	}
+
+	public int getLugarAsiento() {
+		return lugarAsiento;
+	}
+
+	public void setLugarAsiento(int lugarAsiento) {
+		this.lugarAsiento = lugarAsiento;
+	}
+
+	public String getDestino() {
+		return destino;
+	}
+
+	public void setDestino(String destino) {
+		this.destino = destino;
+	}
+
+	public float getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(float precio) {
+		this.precio = precio;
+	}
+
+	public String getHorario() {
+		return horario;
+	}
+
+	public void setHorario(String horario) {
+		this.horario = horario;
+	}
+
+}

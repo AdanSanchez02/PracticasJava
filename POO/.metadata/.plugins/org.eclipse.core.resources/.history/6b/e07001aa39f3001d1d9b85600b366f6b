@@ -1,0 +1,18 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		// Instancia de clase y asignacion de valores
+		Persona persona1 = new Persona();
+		
+		persona1.nombre = "Adan";
+		persona1.edad = 29;
+		
+		System.out.println("Las caracteristicas de las personas es: ");
+		System.out.println("Nombre: " + persona1.nombre);
+		System.out.println("Edad: " + persona1.edad);
+
+	}
+
+}

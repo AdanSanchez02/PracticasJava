@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		//Declarar la coleccion de objetos
+		Celulares cel1 = new Celulares("Motorola", "06", "negro", 16, 1500);
+		Celulares cel2 = new Celulares("Samsung", "Note10", "azul", 128, 15000);
+		Celulares cel3 = new Celulares("iphone", "12", "oro", 128, 20000);
+		
+		//Instanciar la clase de implementacion, aqui tenemos accesoa la funcionalidad de los metodos
+		Implementacion imp = new Implementacion();
+		
+		
+	}
+
+}

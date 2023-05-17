@@ -1,0 +1,33 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		// Instancia de clase y asignacion de valores
+		Persona persona1 = new Persona();
+		
+		persona1.nombre = "Adan";
+		persona1.edad = 29;
+		
+		System.out.println("Las caracteristicas de la persona es: ");
+		System.out.println("Nombre: " + persona1.nombre);
+		System.out.println("Edad: " + persona1.edad);
+
+		//Instancia de clase con encapsulamiento
+		Persona persona2 = new Persona();
+		
+		//SET -- Es un procediento y permite enviar
+		persona2.setNombre("Alberto");
+		persona2.setEdad(22);
+		persona2.setGenero("Masculino");
+		
+		//GET -- Es un metodo que me permite obtener
+		
+		System.out.println("Las caracteristicas de la persona 2 es:");
+		System.out.println("Nombre: " + persona2.getNombre());
+		System.out.println("Edad: " + persona2.getEdad());
+		System.out.println("Edad: " + persona2.getGenero());
+		
+	}
+
+}

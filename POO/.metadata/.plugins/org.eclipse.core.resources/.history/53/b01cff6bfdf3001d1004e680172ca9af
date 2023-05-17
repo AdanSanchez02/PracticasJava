@@ -1,0 +1,23 @@
+package ejercicios.scaner.autos;
+
+public class ventaAutos {
+	
+	//Declaramos variables
+	public String marca;
+	public String modelo;
+	public String version;
+	public int anio;
+	public String caja;
+	public long precio;
+	public float motor;
+	
+	//Instancia
+	
+	public Autos car = new Autos();
+	
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+}

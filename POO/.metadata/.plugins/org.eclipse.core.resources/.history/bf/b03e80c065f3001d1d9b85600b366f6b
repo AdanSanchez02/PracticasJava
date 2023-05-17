@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Declarar variables
+		long codigoB;
+		String clave;
+		String nombreP;
+		float precio;
+		int cantidad;
+		String unidadMedida;
+
+		// Reserva de espacio de memoria
+		Productos producto = null;
+
+		// Es una libreria --  es un conjunto de clases desarrollado por alguien para que nuestra apliccion funcione correctamente
+		Scanner lectura = null;
+		
+		//Declaramsos la lista
+		List<Productos> listProduct = new ArrayList<Productos>();
+		int menuP;
+		
+		do {
+			System.out.println("Menu de Opciones");
+			System.out.println("1 -- Agregar Producto");
+			System.out.println("2 -- Buscar Producto");
+			System.out.println("3 -- Editar");
+			System.out.println("4 -- Eliminar");
+			System.out.println("5 -- Contar");
+			System.out.println("6 -- Salir");
+			
+			lectura =  new Scanner(System.in);
+			menuP = lectura.nextInt();
+			
+			switch(menuP) {
+			case 1:
+				System.out.println("Ingrese el codigo de barra");
+				codigoB = lectura.nextLong();
+				System.out.println("Ingrese la clave");
+				clave = lectura.nextLine();
+				System.out.println("Ingrese el nombre del producto");
+				nombreP = lectura.nextLine();
+				System.out.println("Ingrese el precio");
+				precio = lectura.nextFloat();
+				System.out.println("Ingrese la cantidad del producto");
+				cantidad = lectura.nextInt();
+				System.out.println("Ingrese la unidad de medida");
+				unidadMedida = lectura.nextLinet();
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			}
+			
+		}while(menuP<6);
+	}
+}

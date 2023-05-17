@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		long codigoB;
+		String clave;
+		String nombreP;
+		float precio;
+		int cantidad;
+		String unidadMedida;
+
+	}
+}

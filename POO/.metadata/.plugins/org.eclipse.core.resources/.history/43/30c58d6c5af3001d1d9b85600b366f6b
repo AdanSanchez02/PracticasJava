@@ -1,0 +1,16 @@
+import java.util.Random; 
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		
+		char c;
+		for(int x = 0; x < 250; x++) {
+			c = Random();
+		}
+
+	}
+	
+
+}

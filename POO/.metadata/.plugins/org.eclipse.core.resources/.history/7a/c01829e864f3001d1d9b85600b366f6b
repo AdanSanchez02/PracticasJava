@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Declarar variables
+		long codigoB;
+		String clave;
+		String nombreP;
+		float precio;
+		int cantidad;
+		String unidadMedida;
+
+		// Reserva de espacio de memoria
+		Productos producto = null;
+
+		// Es una libreria --  es un conjunto de clases desarrollado por alguien para que nuestra apliccion funcione correctamente
+		Scanner lectura = null;
+		
+		//Declaramsos la lista
+		List<Productos> listProduct = new ArrayList<Productos>();
+	}
+}

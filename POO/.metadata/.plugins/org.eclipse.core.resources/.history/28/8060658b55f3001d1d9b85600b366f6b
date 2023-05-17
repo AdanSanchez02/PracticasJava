@@ -1,0 +1,106 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class compraAvion {
+	public static void main(String[] args) {
+		Avion av1 = new Avion("Boeing", 22022021, "c1525ttr", "AEM", 1478963, 12000500);
+		Avion av2 = new Avion("Ambrier", 25689632, "c1525t5r", "DELTA", 259635, 15000000);
+		Avion av3 = new Avion("Hercules", 25986324, "c1525ftg", "AMERICAN", 14852369, 26000000);
+		Avion av4 = new Avion("Hercules", 10245863, "d8595ttr", "VIVA", 3695874, 32150000);
+		Avion av5 = new Avion("Boeing", 89622021, "s5895ttr", "LUFFTHASA", 985632, 26900000);
+		Avion av6 = new Avion("Interjet", 220223693, "c256925ttr", "ASIAN", 9872365,900999);
+
+		// Declarar lista para almacenar objetos
+		List<Avion> nave = new ArrayList<Avion>();
+
+		// Agregar objetos en la lista
+		nave.add(av1);
+		nave.add(av2);
+		nave.add(av3);
+		nave.add(av4);
+		nave.add(av5);
+		nave.add(av6);
+
+		// Mostrar la list de objeto
+		System.out.println("\n Lista de: " + nave);
+
+		// Buscar en la lista
+		// Declarar variable para reserva de espacio de memoria
+		Avion avn = null;
+		avn = nave.get(1);
+		System.out.println("El comprador es: " + avn.getComprador());
+
+		// Realizar con un ciclo la busqueda de un objeto
+		for (Avion p : nave) {
+			if (p.getMarca().equals("Interjet")) {
+				System.out.println("Se encontro: " + p);
+			}
+		}
+
+		// Editar -- primero hay que buscar
+		avn = nave.get(2);
+		System.out.println("Se encontro la nave: " + avn);
+		avn.setComprador("DHL");
+		System.out.println(nave);
+
+		// Eliminar
+
+		nave.remove(0);
+		System.out.println(nave);
+
+		// Ciclo for normal mostrar el indice de la lista y el nombre de la pelicula
+
+		for (int x = 0; x < nave.size(); x++) {
+			System.out.printf("\n %d  " + nave.get(x).getComprador(), x);
+		}
+
+		// Iteracion -- me permite mostrar los objetos de la lista
+
+		Iterator iterando = nave.iterator();
+
+		for (int x = 0; x < nave.size(); x++) {
+			while (iterando.hasNext()) {
+				System.out.println("\n lista de " + iterando.next());
+			}
+		}
+		
+		//Operacion
+		long aux=0;
+		for (int x = 0; x < nave.size(); x++) {
+			aux = nave.get(x).getPrecio();
+			System.out.printf("\n %d  " + nave.get(x).getComprador(), x);
+		}
+		
+
+	}
+}
+
+/*
+ * public static void main(String[] args) { // TODO Esbozo de método generado
+ * automáticamente // Instancia de clase y asignacion de valores Avion av1 = new
+ * Avion();
+ * 
+ * av1.comprador = "Mexico"; av1.fechaManufactura = 220516L;
+ * System.out.println("Encargo de compra de avion");
+ * System.out.println("Comprador: " + av1.comprador);
+ * System.out.println("Fecha de manufactura: " + av1.fechaManufactura);
+ * 
+ * // Instancia de clase con encapsulamiento Avion av2 = new Avion();
+ * 
+ * // SET -- Es un procediento y permite enviar av2.setComprador("Peru");
+ * av2.setFechaManufactura(260305L); av2.setModelo("c1545th");
+ * 
+ * // GET -- Es un metodo que me permite obtener
+ * 
+ * System.out.println("Encargo de compra de avion numero 2");
+ * System.out.println("Comprador: " + av2.getComprador());
+ * System.out.println("Fecha de manufactura: " + av2.getFechaManufactura());
+ * System.out.println("Modelo: " + av2.getModelo());
+ * 
+ * // Instancia de clase con el constructor con parametros Avion av3 = new
+ * Avion("Boeing", 221221, "025thy35", "Noruega", 235896325);
+ * System.out.println("El encargo del avion numero 3 : " + av3); }
+ * 
+ * }
+ */

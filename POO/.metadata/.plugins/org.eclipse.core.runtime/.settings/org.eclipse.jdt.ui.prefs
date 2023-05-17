@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Persona"><rhs name\="Persona"/></lhs><lhs name\="Avion"><rhs name\="Avion"/></lhs><lhs name\="Pelicula"><rhs name\="Pelicula"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="Productos"><rhs name\="Productos"/></lhs><lhs name\="ejercicios.scaner.autos.Autos"><rhs name\="ejercicios.scaner.autos.Autos"/></lhs><lhs name\="Celulares"><rhs name\="Celulares"/></lhs><lhs name\="ejercicios.interfac.helado.Helados"><rhs name\="ejercicios.interfac.helado.Helados"/></lhs><lhs name\="Boletos"><rhs name\="Boletos"/></lhs><lhs name\="Candidatos"><rhs name\="Candidatos"/></lhs><lhs name\="Votantes"><rhs name\="Votantes"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

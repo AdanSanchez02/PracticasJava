@@ -1,0 +1,15 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+
+		// Instancia de clase con el constructor con todos los parametros
+		
+		Pelicula peli1 = new Pelicula("Pinocho", "Animada", 1.38f, "Guillermo del toro", 2023);
+		Pelicula peli2 = new Pelicula("Pinocho", "Animada", 1.38f, "Guillermo del toro", 2023);
+		Pelicula peli3 = new Pelicula("Pinocho", "Animada", 1.38f, "Guillermo del toro", 2023);
+
+	}
+
+}

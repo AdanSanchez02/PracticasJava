@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Persona"/>
+    <fullyQualifiedTypeName name="Pelicula"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="Avion"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="Productos"/>
+    <fullyQualifiedTypeName name="ejercicios.scaner.autos.Autos"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Celulares"/>
+    <fullyQualifiedTypeName name="ejercicios.interfac.helado.Helados"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Boletos"/>
+    <fullyQualifiedTypeName name="MetodosFunciones"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="Candidatos"/>
+    <fullyQualifiedTypeName name="Votantes"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+</qualifiedTypeNameHistroy>

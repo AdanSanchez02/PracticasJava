@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Votaciones {
+
+	// Atributos
+	public static String votoCand; // Candidato a quien votaron
+	public static String folioId; // Folio o numero de identificacin
+	public static String nombreVot; // Primer nombre del votante
+	public static String apellidoVot; // Primer apellido del votante
+	public static int edad; // Edad del votante
+	public static String sexo; // Sexo del votante (masculino M y femenino F)
+	public static String nombreCandidato; // Nombre del Candidato a Registrar
+	
+	public static Implementaciones imp = new Implementaciones();
+	public static Scanner lectura = null;
+	
+	public static Candidatos candi = null;
+
+	public static void main(String[] args) {
+		seleccionCandidatos();
+
+	}
+	
+	public static void seleccionCandidatos() {
+		while(true){
+			int candTo;
+			System.out.println("Ingrese la cantidad de Candidatos a participar");
+			lectura = new Scanner(System.in);
+			candTo = lectura.nextInt();
+			for(int p=0; p < candTo; p++) {
+				System.out.println("Ingrese candidato " + candTo + " : ");
+				lectura = new Scanner(System.in);
+				nombreCandidato = lectura.nextLine();
+			}
+			break;
+		}
+	}
+
+}

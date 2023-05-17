@@ -1,0 +1,39 @@
+import java.util.Random;
+
+public class Test {
+
+	public String getCadena(int length) {
+		String abcMayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String abcMinus = "abcdefghijklmnopqrstuvwxyz";
+		
+		String caracteres = abcMayus + abcMinus;
+		Random mRandom = new Random();
+		
+		String res = "";
+		int pos;
+		char car;
+		int aux = 0;
+		for(int i=0; i<length; i++) {
+			pos = mRandom.nextInt(caracteres.length());
+			car = caracteres.charAt(pos);
+			res += car;
+			if(pos == 'A' || pos == 'a') {
+				aux += 1;
+			}
+		}
+		
+		System.out.println(" ");
+		System.out.println("El total de A y a en el String es: " + aux);
+		
+		return res;
+	}
+
+	public static void main(String[] args) {
+		
+		Test cadena = new Test();
+		System.out.println("Cadena: "+ cadena.getCadena(250));
+	}
+
+}
+
+

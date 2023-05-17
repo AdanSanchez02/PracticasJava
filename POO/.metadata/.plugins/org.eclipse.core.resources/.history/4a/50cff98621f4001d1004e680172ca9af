@@ -1,0 +1,48 @@
+package ejercicios.interfac.helado;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		//Declarar la coleccion de objetos
+				
+				Helados hel1 = new Helados("Vainilla", "Cono", "3bolitas", "galleta", 20);
+				Helados hel2 = new Helados("Chocolate", "Cono", "2bolitas", "chispas", 15);
+				Helados hel3 = new Helados("Limon", "Vaso", "5bolitas", "chamoy", 12);
+				
+				//Instanciar la clase de implementacion, aqui tenemos accesoa la funcionalidad de los metodos
+				Implementar imp = new Implementar();
+				
+				//Guardar
+				imp.guardar(cel1);
+				imp.guardar(cel2);
+				imp.guardar(cel3);
+				
+				//Mostrar
+				imp.mostrar();
+				
+				//Buscar
+				Celulares celular = null;
+				celular = imp.buscar(0);
+				System.out.println("Celular: " + celular.getMarca());
+				
+				//Editar
+				celular = imp.buscar(1);
+				System.out.println("Celular: " + celular.getMarca());
+				celular.setMarca("Huawei");
+				imp.editar(1, celular);
+				
+				imp.mostrar();
+				
+				//Eliminar
+				imp.eliminar(2);
+				
+				imp.mostrar();
+				
+				//Contar
+				
+				imp.contar();
+		
+	}
+
+}

@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Implementaciones implements MetodosFunciones {
+
+	// Declarar la lista
+	List<Candidatos> listCandidato = new ArrayList<Candidatos>();
+	List<Votantes> listVoto = new ArrayList<Votantes>();
+	
+	@Override
+	public void guardar(Candidatos candidato) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+	
+
+	@Override
+	public void guardar(Votantes votos) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+	@Override
+	public void editar(int i, Votantes votos) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+	@Override
+	public void eliminar(int i) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+	@Override
+	public Votantes buscar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+
+
+}

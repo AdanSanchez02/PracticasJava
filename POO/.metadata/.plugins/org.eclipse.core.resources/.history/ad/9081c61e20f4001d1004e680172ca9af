@@ -1,0 +1,13 @@
+package ejercicios.interfac.helado;
+
+public interface Metodos1 {
+public void guardar(Celulares celulcar);
+	
+	public void editar(int i, Celulares celular);
+	
+	public void eliminar(int i);
+	
+	public Celulares buscar(int i);
+	
+	public void mostrar();
+}

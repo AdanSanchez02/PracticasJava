@@ -1,0 +1,86 @@
+/*
+ * Elabora un programa en java de acuerdo con lo siguiente:
+ * Pedir el número de candidatos y el número de votantes que participarán en las elecciones
+ * Se deberán ingresar los votos de los votantes 
+ * y se deberá mostrar el resultado de las elecciones con el lugar correspondiente de cada candidato.
+ */
+
+public class Votantes {
+
+	// Atributos
+	String votoCand; // Candidato a quien votaron
+	String folioId; // Folio o numero de identificacin
+	String nombreVot; // Primer nombre del votante
+	String apellidoVot; // Primer apellido del votante
+	int edad; // Edad del votante
+	String sexo; // Sexo del votante (masculino M y femenino F)
+
+	public Votantes() {
+		
+	}
+
+	public Votantes(String votoCand, String folioId, String nombreVot, String apellidoVot, int edad, String sexo) {
+		
+		this.votoCand = votoCand;
+		this.folioId = folioId;
+		this.nombreVot = nombreVot;
+		this.apellidoVot = apellidoVot;
+		this.edad = edad;
+		this.sexo = sexo;
+	}
+
+	@Override
+	public String toString() {
+		return "Votantes [votoCand=" + votoCand + ", folioId=" + folioId + ", nombreVot=" + nombreVot + ", apellidoVot="
+				+ apellidoVot + ", edad=" + edad + ", sexo=" + sexo + "]\n";
+	}
+
+	public String getVotoCand() {
+		return votoCand;
+	}
+
+	public void setVotoCand(String votoCand) {
+		this.votoCand = votoCand;
+	}
+
+	public String getFolioId() {
+		return folioId;
+	}
+
+	public void setFolioId(String folioId) {
+		this.folioId = folioId;
+	}
+
+	public String getNombreVot() {
+		return nombreVot;
+	}
+
+	public void setNombreVot(String nombreVot) {
+		this.nombreVot = nombreVot;
+	}
+
+	public String getApellidoVot() {
+		return apellidoVot;
+	}
+
+	public void setApellidoVot(String apellidoVot) {
+		this.apellidoVot = apellidoVot;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+}

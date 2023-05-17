@@ -1,0 +1,5 @@
+package ejercicios.interfac.helado;
+
+public interface Metodos1 {
+
+}

@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class compraAvion {
+	public static void main(String[] args) {
+		Avion av1 = new Avion("Boeing", 22022021, "c1525ttr", "AEM", 1478963);
+		Avion av2 = new Avion("Ambrier", 25689632, "c1525t5r", "DELTA", 259635);
+		Avion av3 = new Avion("Hercules", 25986324, "c1525ftg", "AMERICAN", 14852369);
+		Avion av4 = new Avion("Hercules", 10245863, "d8595ttr", "VIVA", 3695874);
+		Avion av5 = new Avion("Boeing", 89622021, "s5895ttr", "LUFFTHASA", 985632);
+		Avion av6 = new Avion("Interjet", 220223693, "c256925ttr", "ASIAN", 9872365);
+
+		// Declarar lista para almacenar objetos
+		List<Avion> nave = new ArrayList<Avion>();
+
+		// Agregar objetos en la lista
+		nave.add(av1); nave.add(av2); nave.add(av3);
+		nave.add(av4); nave.add(av5); nave.add(av6);
+	}
+}
+
+/*
+ * public static void main(String[] args) { // TODO Esbozo de método generado
+ * automáticamente // Instancia de clase y asignacion de valores Avion av1 = new
+ * Avion();
+ * 
+ * av1.comprador = "Mexico"; av1.fechaManufactura = 220516L;
+ * System.out.println("Encargo de compra de avion");
+ * System.out.println("Comprador: " + av1.comprador);
+ * System.out.println("Fecha de manufactura: " + av1.fechaManufactura);
+ * 
+ * // Instancia de clase con encapsulamiento Avion av2 = new Avion();
+ * 
+ * // SET -- Es un procediento y permite enviar av2.setComprador("Peru");
+ * av2.setFechaManufactura(260305L); av2.setModelo("c1545th");
+ * 
+ * // GET -- Es un metodo que me permite obtener
+ * 
+ * System.out.println("Encargo de compra de avion numero 2");
+ * System.out.println("Comprador: " + av2.getComprador());
+ * System.out.println("Fecha de manufactura: " + av2.getFechaManufactura());
+ * System.out.println("Modelo: " + av2.getModelo());
+ * 
+ * // Instancia de clase con el constructor con parametros Avion av3 = new
+ * Avion("Boeing", 221221, "025thy35", "Noruega", 235896325);
+ * System.out.println("El encargo del avion numero 3 : " + av3); }
+ * 
+ * }
+ */

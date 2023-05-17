@@ -1,0 +1,27 @@
+package ejercicios.interfac.helado;
+
+public class Helados {
+	
+	String sabor;
+	String recipiente;
+	String cantidad;
+	String toppy;
+	int costo;
+	
+	public Helados() {
+		
+	}
+
+	public Helados(String sabor, String recipiente, String cantidad, String toppy, int costo) {
+		
+		this.sabor = sabor;
+		this.recipiente = recipiente;
+		this.cantidad = cantidad;
+		this.toppy = toppy;
+		this.costo = costo;
+	}
+	
+	
+	
+
+}

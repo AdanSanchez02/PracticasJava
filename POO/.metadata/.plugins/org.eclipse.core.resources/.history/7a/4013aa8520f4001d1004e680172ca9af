@@ -1,0 +1,41 @@
+package ejercicios.interfac.helado;
+
+public class Implementar implements Metodos1{
+
+	@Override
+	public void guardar(Helados helado) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void editar(int i, Helados helado) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void eliminar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public Helados buscar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+	@Override
+	public void contar() {
+		// TODO Esbozo de método generado automáticamente
+		
+	}
+
+}

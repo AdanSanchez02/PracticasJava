@@ -1,0 +1,28 @@
+import java.util.Random;
+
+public class Test {
+
+	private static char randomChar() {
+		int rand = new Random().nextInt(52);
+		char start = (rand < 26) ? 'A' : 'a';
+		return (char) (start + rand % 26);
+	}
+
+	public static void main(String[] args) {
+		
+		int sizeArr = 256;
+		int aux = 0;
+		char c = ' ';
+		for(int x=0; x < sizeArr; x++) {
+			c = randomChar();
+			System.out.print(c);
+			if(c == 'A' || c == 'a') {
+				aux += 1;
+			}
+		}
+		System.out.println(" ");
+		System.out.println("El total de A y a en el String es: " + aux);
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Votaciones {
+
+	// Atributos
+	public static String votoCand; // Candidato a quien votaron
+	public static String folioId; // Folio o numero de identificacin
+	public static String nombreVot; // Primer nombre del votante
+	public static String apellidoVot; // Primer apellido del votante
+	public static int edad; // Edad del votante
+	public static String sexo; // Sexo del votante (masculino M y femenino F)
+	
+	Implementaciones imp = new Implementaciones();
+	Scanner lectura = null;
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+	
+	public static void seleccionCandidatos() {
+		while(true){
+			
+		}
+	}
+
+}

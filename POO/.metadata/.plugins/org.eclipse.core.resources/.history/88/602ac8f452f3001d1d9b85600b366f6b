@@ -1,0 +1,35 @@
+
+public class compraAvion {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		// Instancia de clase y asignacion de valores
+		Avion av1 = new Avion();
+
+		av1.comprador = "Mexico";
+		av1.fechaManufactura = 220516L;
+		System.out.println("Encargo de compra de avion");
+		System.out.println("Comprador: " + av1.comprador);
+		System.out.println("Fecha de manufactura: " + av1.fechaManufactura);
+
+		// Instancia de clase con encapsulamiento
+		Avion av2 = new Avion();
+
+		// SET -- Es un procediento y permite enviar
+		av2.setComprador("Peru");
+		av2.setFechaManufactura(260305L);
+		av2.setModelo("c1545th");
+
+		// GET -- Es un metodo que me permite obtener
+
+		System.out.println("Encargo de compra de avion numero 2");
+		System.out.println("Comprador: " + av2.getComprador());
+		System.out.println("Fecha de manufactura: " + av2.getFechaManufactura());
+		System.out.println("Modelo: " + av2.getModelo());
+
+		// Instancia de clase con el constructor con parametros
+		Avion av3 = new Avion("Boeing", 221221, "025thy35", "Noruega", 235896325);
+		System.out.println("El encargo del avion numero 3 : " + av3);
+	}
+
+}

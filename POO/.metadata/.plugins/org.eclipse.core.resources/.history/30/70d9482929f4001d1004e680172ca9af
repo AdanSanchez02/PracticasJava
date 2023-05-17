@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+		// Declarar variables
+		int lugarAsiento;
+		String destino;
+		float precio;
+		String horario;
+		
+		Boletos boleto = null;
+		
+		Implementacion imp = new Implementacion();
+		Scanner lectura = null;
+		
+		int menuP, indice, subMenu;
+		
+		do {
+			
+			System.out.println("Menu Principal");
+			System.out.println("	1 -- Alta");
+			System.out.println("	2 -- Buscar");
+			System.out.println("	3 -- Editar");
+			System.out.println("	4 -- Eliminar");
+			System.out.println("	5 -- Mostrar");
+			System.out.println("	6 -- Contar");
+			System.out.println("	7 -- Salir");
+			
+			lectura = new Scanner(System.in);
+			menuP = lectura.nextInt();
+			
+			switch(menuP){
+			case 1:
+				break;
+				
+			case 2:
+				break;
+				
+			case 3:
+				break;
+				
+			case 4:
+				break;
+				
+			case 5:
+				break;
+				
+			case 6:
+				break;
+				
+			case 7:
+				break;
+			}
+			
+		}while(menuP < 7);
+	}
+
+}

@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+
+		// Instancia de clase con el constructor con todos los parametros
+		// Objetos
+		Pelicula peli1 = new Pelicula("Pinocho", "Animada", 1.50f, "Guillermo", 2023);
+		Pelicula peli2 = new Pelicula("Avatar", "Aventura", 2.42f, "James ", 2009);
+		Pelicula peli3 = new Pelicula("Fredy", "Terror", 1.38f, "Rony", 2003);
+
+		// Declarar lista para almacenar objetos
+		List<Pelicula> listPeli = new ArrayList<Pelicula>();
+
+		// Agregar objetos en la lista
+		listPeli.add(peli1);
+		listPeli.add(peli2);
+		listPeli.add(peli3);
+
+		// Mostrar la list de objeto
+		System.out.println("Lista de: " + listPeli);
+
+		// Buscar en la lista
+		// Declarar variable para reserva de espacio de memoria
+		Pelicula pel = null;
+
+		pel = listPeli.get(0);
+
+		System.out.println("Se encontro la pelicula: " + pel.getNombre());
+
+		// Realizar con un ciclo la busqueda de un objeto
+
+		int i = 0;
+		while (i < listPeli.size()) {
+			pel = listPeli.get(i);
+			if (pel.getNombre() == "Avatar") {
+				System.out.println("Avatar se encuentra en el indice: " + pel);
+				break;
+			}
+			i++;
+		}
+
+		for (Pelicula p : listPeli) {
+			if (p.getNombre().equals("Avatar")) {
+				System.out.println("Se encontro: " + p);
+			}
+		}
+		
+		
+		//Editar -- primero hay que buscar
+		pel = listPeli.get(2);
+		System.out.println("Se encontro la pelicula: " + pel);
+		pel.setDirector("Javo");
+		System.out.println(listPeli);
+		
+		//Eliminar
+		listPeli.remove(0);
+		System.out.println(listPeli);
+		
+		//ciclo for normal mostrar el indice de la lista y el nombre de la pelicula
+		
+		for(int x=0; x <listPeli.size(); x++) {
+			pel = listPeli.get(x);
+			System.out.println("Indice de la lista: " + x + " Nombre de la pelicula: " + pel.getNombre());
+		}
+		
+	}
+
+}

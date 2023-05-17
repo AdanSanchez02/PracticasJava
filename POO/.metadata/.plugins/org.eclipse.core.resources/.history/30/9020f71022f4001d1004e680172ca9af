@@ -1,0 +1,50 @@
+package ejercicios.interfac.helado;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Implementar implements Metodos1{
+	
+	//Declarar la lista
+	List<Helados> listhel = new ArrayList<Helados>();
+		
+	@Override
+	public void guardar(Helados helado) {
+		// TODO Esbozo de método generado automáticamente
+		listhel.add(helado);
+	}
+
+	@Override
+	public void editar(int i, Helados helado) {
+		// TODO Esbozo de método generado automáticamente
+		listhel.set(i, helado);
+	}
+
+	@Override
+	public void eliminar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		listhel.remove(i);
+	}
+
+	@Override
+	public Helados buscar(int i) {
+		// TODO Esbozo de método generado automáticamente
+		Helados helad = listhel.get(i);
+		return helad;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Esbozo de método generado automáticamente
+		System.out.println(listhel);
+		
+	}
+
+	@Override
+	public void contar() {
+		// TODO Esbozo de método generado automáticamente
+		System.out.println("Cantidad de celulares: " + listhel.size());
+		
+	}
+
+}

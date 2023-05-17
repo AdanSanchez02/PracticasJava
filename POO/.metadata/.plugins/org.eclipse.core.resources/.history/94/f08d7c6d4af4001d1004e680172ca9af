@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Implementaciones implements MetodosFunciones {
+
+	// Declarar la lista
+	List<Candidatos> listCandidato = new ArrayList<Candidatos>();
+	List<Votantes> listVoto = new ArrayList<Votantes>();
+	
+	@Override
+	public void guardarCandidato(Candidatos candidato) {
+		listCandidato.add(candidato);
+	}
+	
+	@Override
+	public void mostrarCandidato() {
+		System.out.println(listCandidato);
+	}
+
+	@Override
+	public void guardarVotante(Votantes votos) {
+		listVoto.add(votos);
+	}
+	
+	@Override
+	public void mostrarVotante() {
+		System.out.println(listVoto);
+	}
+
+	public void mostrarNombreCandidato() {
+		System.out.println("\n   Candidatos Existentes");
+		for (int i = 0; i < listCandidato.size(); i++) {
+			System.out.printf("\n [%d] " + listCandidato.get(i).getNombreCandidto(), i);
+		}
+	}
+
+}

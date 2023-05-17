@@ -1,0 +1,18 @@
+package ejercicios.scaner.autos;
+
+public class ventaAutos {
+	
+	String marca;
+	String modelo;
+	String version;
+	int anio;
+	String caja;
+	long precio;
+	float motor;
+
+	public static void main(String[] args) {
+		// TODO Esbozo de método generado automáticamente
+
+	}
+
+}

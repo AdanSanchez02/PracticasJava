@@ -1,0 +1,6 @@
+
+public interface Metodos2 {		
+	
+	public void contar();
+
+}

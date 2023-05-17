@@ -1,0 +1,203 @@
+package ejercicios.scaner.autos;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ventaAutos {
+
+	// Declaramos variables
+	public static String marca;
+	public static String modelo;
+	public static String version;
+	public static int anio;
+	public static String caja;
+	public static long precio;
+	public static float motor;
+
+	public static int indice, buscarI;
+
+	// Espacio de memoria
+	public static Autos car = null;
+	// Funcion scanner
+	public static Scanner lectura = null;
+	// Lista
+	public static List<Autos> listCar = new ArrayList<Autos>();
+
+	public static void main(String[] args) {
+		menuPrincipal();
+	}
+
+	public static void menuPrincipal() { // Menu principal
+
+		int menuP;
+		do {
+			System.out.println("Menu de Opciones");
+			System.out.println("1 -- Dar de alta");
+			System.out.println("2 -- Buscar auto");
+			System.out.println("3 -- Editar auto");
+			System.out.println("4 -- Eliminar auto");
+			System.out.println("5 -- Contar Producto");
+			System.out.println("6 -- Mostrar autos");
+			System.out.println("7 -- Buscar por modelo de auto");
+			System.out.println("8 -- Eliminar por modelo de auto");
+			System.out.println("9 -- Vaciar");
+			System.out.println("10 -- Salir");
+
+			lectura = new Scanner(System.in);
+			menuP = lectura.nextInt();
+
+			switch (menuP) {
+			case 1:
+				altaCar();
+				break;
+			case 2:
+				buscarI = buscarIndice();
+				car = listCar.get(buscarI);
+				System.out.println("info: " + car);
+				break;
+			case 3:
+				editarAuto();
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			case 7:
+				break;
+			case 8:
+				break;
+			case 9:
+				break;
+			default:
+				break;
+			}
+
+		} while (menuP < 10);
+	}
+
+	public static void eliminarAuto() {
+		
+	}
+	
+	public static void editarAuto() {
+		int menuS;
+		System.out.println("Indice y Modelo del Auto a buscar");
+		for (int i = 0; i < listCar.size(); i++) {
+			System.out.printf("\n [%d] " + listCar.get(i).getModelo(), i);
+		}
+
+		System.out.println("\nIngrese el indice del auto a modificar");
+		lectura = new Scanner(System.in);
+		indice = lectura.nextInt();
+
+		car  = listCar.get(indice);
+		System.out.println("Se encontro el Auto" + car);
+
+		do {
+			System.out.println("Submenu de datos del auto");
+			System.out.println("1 -- Editar version del auto");
+			System.out.println("2 -- Editar año del auto");
+			System.out.println("3 -- Menu principal");
+
+			lectura = new Scanner(System.in);
+			menuS = lectura.nextInt();
+
+			switch (menuS) {
+			case 1:
+				System.out.println("Ingrese la version a modificar del auto");
+				lectura = new Scanner(System.in);
+				version = lectura.nextLine();
+				car.setVersion(version);
+				listCar.set(indice, car);
+				System.out.println("Se edito correctamente");
+				break;
+
+			case 2:
+				System.out.println("Ingrese el año a modificar del auto");
+				lectura = new Scanner(System.in);
+				anio = lectura.nextInt();
+				car.setAnio(anio);
+				listCar.set(indice, car);
+				System.out.println("Se edito correctamente");
+				break;
+
+			case 3:
+				break;
+			}
+
+		} while (menuS < 3);
+	}
+
+	public static int buscarIndice() {
+		System.out.println("Indice y Modelo del Auto a buscar");
+		for (int i = 0; i < listCar.size(); i++) {
+			System.out.printf("\n [%d] " + listCar.get(i).getModelo(), i);
+		}
+
+		System.out.println("\nIngrese el indice del Auto a buscar");
+		lectura = new Scanner(System.in);
+		indice = lectura.nextInt();
+
+		return indice;
+	}
+
+	public static void altaCar() {
+		System.out.println("Ingrese los datos solicitados");
+
+		System.out.println("Ingrese la Marca");
+		lectura = new Scanner(System.in);
+		marca = lectura.nextLine();
+		System.out.println("Ingrese el Modelo");
+		lectura = new Scanner(System.in);
+		modelo = lectura.nextLine();
+
+		System.out.println("Ingrese la Version");
+		lectura = new Scanner(System.in);
+		version = lectura.nextLine();
+
+		while (true) {
+			try {
+				System.out.println("Ingrese el año del auto");
+				lectura = new Scanner(System.in);
+				anio = lectura.nextInt();
+				break;
+			} catch (Exception e) {
+				System.out.println("Ingrese el año en datos enteros y sin simbolos");
+			}
+		}
+
+		System.out.println("Ingrese tipo de caja");
+		lectura = new Scanner(System.in);
+		caja = lectura.nextLine();
+
+		while (true) {
+			try {
+				System.out.println("Ingrese el precio");
+				lectura = new Scanner(System.in);
+				precio = lectura.nextLong();
+				break;
+			} catch (Exception e) {
+				System.out.println("Ingrese el precio en datos enteros y sin simbolos");
+			}
+		}
+
+		while (true) {
+			try {
+				System.out.println("Ingrese la version del motor");
+				lectura = new Scanner(System.in);
+				motor = lectura.nextFloat();
+				break;
+			} catch (Exception e) {
+				System.out.println("Ingrese la version del motor sin carcateres");
+			}
+		}
+
+		car = new Autos(marca, modelo, version, anio, caja, precio, motor);
+		listCar.add(car);
+		System.out.println(listCar);
+	}
+
+}
